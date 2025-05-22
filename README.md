@@ -1,2 +1,33 @@
 # Solar-Tracker-
 The project makes a solar panel follow the light to capture the best energy possible.
+
+Solar Panel Light Tracker
+
+This project uses two Light Dependent Resistors (LDRs) and a servo motor controlled by an Arduino to automatically rotate a small solar panel toward the strongest light source. This maximizes the solar panel's energy capture by always facing the light directly.
+
+ Components Used
+- Arduino Uno or Nano
+- 2 x LDR (Light Dependent Resistors)
+- 2 x 10kΩ resistors
+- 1 x Servo motor
+- Small solar panel
+- Breadboard and jumper wires
+
+ Wiring Overview
+
+- Each LDR forms a voltage divider with a 10kΩ resistor.
+- LDR terminals connected to 5V and analog inputs (A0 and A1).
+- 10kΩ resistors connected from analog inputs to GND.
+- Servo motor connected to 5V, GND, and digital pin 9.
+
+ How It Works
+
+The Arduino reads the light intensity from both LDRs and compares them. It moves the servo motor to turn the solar panel toward the side with stronger light, optimizing the panel's orientation for maximum energy harvesting.
+
+ Code Usage
+
+Upload the provided `SolarTracker.ino` file to your Arduino. Open the Serial Monitor to see the sensor readings and watch the servo motor adjust the panel position in response to light changes.
+
+ License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
