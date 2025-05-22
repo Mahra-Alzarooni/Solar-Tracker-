@@ -25,6 +25,6 @@ Code Usage
 
 Upload the provided `SolarTracker.ino` file to your Arduino. Open the Serial Monitor to see the sensor readings and watch the servo motor adjust the panel position in response to light changes.
 
-## License
+License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
